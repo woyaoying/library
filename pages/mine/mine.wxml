@@ -1,0 +1,53 @@
+<view class='my'>
+    <!-- 顶部 -->
+    <view class="top">
+        <view class="user" >
+            <image 
+                src="{{'../../picture/头像男孩.png'}}" class="headImg" 
+                mode="aspectFill"
+            /> 
+            <view class="msg">
+                <view class="userName">姓名：{{info.name}}</view>
+                <view class="count">账号：{{info.count}}</view>
+                <view class="count">班级：{{info.class}}</view>
+            </view>
+        </view>
+
+    </view>
+
+    <view class="title">安全设置</view>
+    <view class="icon-list second">
+        <view class="icon-item" bindtap="changePassword">
+            <i class="iconfont icon-lock"></i>
+            <view class="text">修改密码</view>
+        </view>
+    </view>
+
+    <view class="title">账号管理</view>
+    <view class="icon-list second">
+        <view class="icon-item" bindtap="loginOut">
+            <i class="iconfont icon-source"></i>
+            <view class="text">退出登录</view>
+        </view>
+    </view>
+    <modal 
+        title="退出登录"
+        hidden="{{hiddenModal}}"
+        confirm-text="确认"
+        cancel-text="取消"
+        bindconfirm="logout_Confirm"
+        bindcancel="logout_Cancel" 
+    ></modal>
+
+
+<modal id="modal" hidden="{{hiddenmodalput}}" title="修改密码" confirm-text="提交" cancel-text="取消" bindcancel="pwd_cancel" bindconfirm="pwd_confirm">
+ 
+<input bindinput ="old_pwd" type='password' placeholder="初始密码：" auto-focus/>
+ 
+<input bindinput ="new_pwd1" type='password' placeholder="新密码：" auto-focus/>
+ 
+<input bindinput ="new_pwd2" type='password' placeholder="确认新密码：" auto-focus/>
+ 
+</modal>
+
+</view>

@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+    <image 
+        src="../../picture/login-top.jpg" class="topImg" 
+        mode="aspectFill"
+    /> 
+
+    <view class="list">
+      
+        <view class="item">
+            <i class="iconfont icon-headimg"></i>
+            <input type="text" placeholder="请输入账号" placeholder-style="font-size:26rpx"  bindinput="addname" class="input" />
+        </view>
+
+        <view class="item">
+            <i class="iconfont icon-lock2"></i>
+            <input type="password" placeholder="请输入密码" placeholder-style="font-size:26rpx" bindinput="addpwd" class="input" />
+        </view>
+        <view class="register" bindtap="add_user">用户注册</view>
+    </view>
+    
+    <view class="btn" bindtap="userlogin">用户登录</view>
+    <view class="btn" bindtap="adminlogin">管理员登录</view>
+
+    
+    
+
+    <image 
+        src="../../picture/login_bottom.jpg" class="bottomImg" 
+        mode="aspectFill"
+    /> 
+
+    <modal id="modal" hidden="{{hiddenmodalput}}" title="输入信息" confirm-text="提交" cancel-text="取消" bindcancel="add_user_cancel" bindconfirm="add_user_confirm">
+    
+        <input bindinput ="new_name" type='text' placeholder="姓名：" auto-focus/>
+    
+        <input bindinput ="new_class" type='text' placeholder="班级：" auto-focus/>
+
+        <input bindinput ="new_id" type='text' placeholder="学号：" auto-focus/>
+    
+        <input bindinput ="new_pwd" type='password' placeholder="密码：" auto-focus/>
+ 
+    </modal>
+
+</view>

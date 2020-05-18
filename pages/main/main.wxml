@@ -1,0 +1,55 @@
+<!--pages/main/main.wxml-->
+<view class="container">
+    <view class="container-home">
+        <!-- 轮播图 -->
+        <view class="swiper-contain">
+        	<swiper 
+            
+        		class="swiper" 
+        		indicator-dots="true" 
+        		autoplay="true" 
+        		interval="3000" 
+        		duration="1000"
+    		>    
+    	        <block wx:for="{{adv}}" wx:key="unique">    
+    		        <swiper-item>    
+    		            <image 
+                            src="{{item}}" 
+                            mode="aspectFill"
+                        /> 
+    		        </swiper-item>    
+    	        </block> 
+    	    </swiper>
+            <view class="swiper-btn">
+                <view bindtap="scanCode">
+                    <i class="iconfont icon-scan"></i>扫一扫
+                </view>
+            </view>
+        </view>
+
+        <view class="order-link-contain">
+            <view class="seat item" bindtap="createOrder">
+                <image 
+                    src='../../picture/seat.png' 
+                    mode="aspectFill"
+                    class="img"
+                />
+                <view class="text">座位预约</view>
+            </view>
+        </view>
+        
+        <!---------公告--------->
+        <view class="notice-contain">
+            <view class="title">公告</view>
+            <view class="list">
+                <view class="item" wx:for="{{noticeList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    {{item.content}}
+                </view>
+                <view class="border1 list-border"></view>
+                <view class="border2 list-border"></view>
+                <view class="border3 list-border"></view>
+                <view class="border4 list-border"></view>
+            </view>
+        </view>
+          </view>
+        </view>

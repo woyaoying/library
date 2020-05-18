@@ -1,0 +1,14 @@
+/* pages/My_weigui/My_weigui.wxss */
+.btn{
+	width: 54%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+	line-height: 100rpx;
+  text-align: left;
+  line-height:70rpx;
+  margin-top: 30rpx;
+  margin-left: 58rpx;
+  border: solid 1rpx red;
+	color: black;
+}

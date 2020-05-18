@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#3d667a",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "图书馆预约管理平台",
+  "backgroundColor": "#000",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}

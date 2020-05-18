@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/main/main",
+    "pages/My_weigui/My_weigui",
+    "pages/yuyuedetail/yuyuedetail",
+    "pages/mine/mine",
+    "pages/admin_main/admin_main",
+    "pages/admin_seat/admin_seat",
+    "pages/admin_yuyue/admin_yuyue",
+    "pages/admin_weigui/admin_weigui",
+    "pages/code_image/code_image",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3D667A",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#3d667a",
+    "borderStyle": "black",
+    "backgroundColor": "#f4f4f4",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "picture/tabbarIcon/home.png",
+        "selectedIconPath": "picture/tabbarIcon/home-active.png",
+        "text": "首页"
+      },
+     
+      {
+        "pagePath": "pages/My_weigui/My_weigui",
+        "iconPath": "picture/tabbarIcon/myreser.png",
+        "selectedIconPath": "picture/tabbarIcon/myreser-active.png",
+        "text": "我的违规"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "picture/tabbarIcon/head.png",
+        "selectedIconPath": "picture/tabbarIcon/head-active.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+}

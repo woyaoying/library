@@ -1,0 +1,134 @@
+/* pages/main/main.wxss */
+page{
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-family: PingFangSC-Regular;
+}
+.container-home{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*轮播图*/
+.swiper-contain{
+	width: 100%;
+	position: relative;
+}
+.swiper {
+	height: 300rpx;
+	width: 100%;
+}
+.swiper image {
+	height: 100%;
+	width: 100%;
+}
+.swiper-btn{
+	position: absolute;
+	top: 15rpx;
+	display: flex;
+	right: 30rpx;
+	font-size: 12pt;
+	color: #3d667a;
+}
+.swiper-btn .iconfont{
+	font-size: 18pt;
+	vertical-align: -7%;
+	margin-right: 3rpx;
+}
+
+/*订单链接*/
+.order-link-contain{
+	display: flex;
+	margin-top: 15rpx;
+  
+ justify-content: center;
+ align-items: center
+}
+.order-link-contain .item{
+	width: 60%;
+	height: 220rpx;
+	text-align: center;
+}
+.order-link-contain .item .img{
+	width: 63rpx;
+	height: 63rpx;
+	margin: 55rpx 0 15rpx 0;
+}
+.order-link-contain .item .text{
+	font-size: 24rpx;
+	color: #fff;
+}
+
+.order-link-contain .seat{
+	background-color: #c6bb9d;
+	color: #4b4b4b;
+}
+
+
+/*公告*/
+.notice-contain{
+	margin: 41rpx 0 34rpx 0;
+	padding: 0 24rpx;
+	color: #4b4b4b;
+}
+.notice-contain .title{
+	text-align: center;
+	font-size: 30rpx;
+	margin-bottom: 34rpx;
+}
+.notice-contain .list{
+	padding: 24rpx 30rpx;
+	font-size: 25rpx;
+	line-height: 32rpx;
+	position: relative;
+}
+
+.list-border{
+	position: absolute;
+	height: 31rpx;
+	width: 31rpx;
+	border-radius: 5rpx;
+}
+
+.border1{
+	left: 0;
+	top: 0;
+	border-left: 0.5rpx solid #c6c6c6;
+	border-top: 0.5rpx solid #c6c6c6;
+}
+.border2{
+	right: 0;
+	top: 0;
+	border-right: 0.5rpx solid #c6c6c6;
+	border-top: 0.5rpx solid #c6c6c6;
+}
+.swiper-btn{
+	position: absolute;
+	top: 15rpx;
+	display: flex;
+	right: 30rpx;
+	font-size: 12pt;
+	color: #3d667a;
+}
+.border3{
+	right: 0;
+	bottom: 0;
+	border-right: 0.5rpx solid #c6c6c6;
+	border-bottom: 0.5rpx solid #c6c6c6;
+}
+.border4{
+	left: 0;
+	bottom: 0;
+	border-left: 0.5rpx solid #c6c6c6;
+	border-bottom: 0.5rpx solid #c6c6c6;
+}
+
+.notice-contain .list .item{
+	margin-bottom: 30rpx;
+}
+.notice-contain .list .item:last-child{
+	margin-bottom: 0;
+}
+

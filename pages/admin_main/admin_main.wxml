@@ -1,0 +1,19 @@
+<view class="container">
+    <image 
+        src="../../picture/login-top.jpg" class="topImg" 
+        mode="aspectFill"
+    /> 
+
+    <view class="btn" bindtap="seat_change">座位更改</view>
+    <view class="btn" bindtap="search_weigui">违规查询</view>
+    <view class="btn" bindtap="search_yuyue">预约查询</view>
+    <view class="btn" bindtap="code_product">签到码生成</view>
+
+    <image 
+        src="../../picture/login_bottom.jpg" class="bottomImg" 
+        mode="aspectFill"
+    /> 
+
+ 
+
+</view>

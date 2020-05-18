@@ -1,0 +1,334 @@
+/**index.wxss**/
+
+page {
+  width: 100%;
+}
+
+.mask {
+  position: fixed;
+  width: 80rpx;
+  height: 29rpx;
+  z-index: 99;
+  background-color: #f5f5f5;
+}
+
+.left {
+  display: flex;
+  font-size: 22rpx;
+  align-items: center;
+  justify-content: center;
+  height: 58rpx;
+  width: 96rpx;
+  color: #101010;
+  margin: 0rpx 2rpx 2rpx 0rpx;
+}
+
+
+.content {
+  display: flex;
+  font-size: 22rpx;
+  align-items: center;
+  justify-content: center;
+  height: 58rpx;
+  width: 96rpx;
+  color: #fff;
+  margin: 0rpx 2rpx 2rpx 0rpx;
+  background-color: #4cae62;
+}
+
+.top {
+  display: flex;
+  font-size: 22rpx;
+  align-items: center;
+  justify-content: center;
+  height: 58rpx;
+  width: 96rpx;
+  color: #131313;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  height: 700rpx;
+  flex-direction: row;
+  background-color: #f5f5f5;
+}
+
+.item-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-right-top {
+  width: 100%;
+  height: 58rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.movable-view-left {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 96rpx;
+  /** 调高 可以有上拉的空间*/
+  height: 1200rpx;
+}
+
+.movable-area-left {
+  height: 700rpx;
+  width: 96rpx;
+  overflow: hidden;
+}
+
+.movable-view-top {
+  display: flex;
+  flex-direction: column;
+  /** 调宽 可以有右拉的空间*/
+  width: 1750rpx;
+  height: 50rpx;
+}
+
+.movable-area-top {
+  height: 58rpx;
+  width: 670rpx;
+  overflow: hidden;
+}
+
+.movable-view-content {
+  display: flex;
+  flex-direction: column;
+  /**动态修改 内容区的宽高**/
+  width: 1568rpx;
+  /**动态修改 内容区的宽高**/
+  height: 992rpx;
+}
+
+.movable-area-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.item-text {
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  font-family: PingFang-SC-Regular;
+  color: rgba(119, 118, 118, 1);
+}
+
+/* * status 
+  * 1 可预订 
+  * 2 已售完 
+  * 3 已选择
+  * 4 我的预订
+  * 5 锁定*/
+
+/* 已售完 */
+
+.soldout {
+  background-color: #cdcdcd;
+}
+
+/* 可预订 */
+
+.reservation {
+  background-color: #4cae62;
+}
+
+/* 已选择 */
+
+.select {
+  background-color: #b7c147;
+}
+
+/* 我的预订 */
+
+.mine {
+  background-color: #f6843b;
+}
+.session {
+  margin-left: 20rpx;
+  align-items: center;
+  padding-top: 23rpx;
+  padding-bottom: 29rpx;
+}
+
+.session-select {
+  flex-shrink: 0;
+  font-size: 28rpx;
+  color: rgba(7, 158, 99, 1);
+}
+
+.session-unselect {
+  flex-shrink: 0;
+  font-size: 28rpx;
+  color: rgba(33, 33, 33, 1);
+}
+
+.time-select {
+  width: 182rpx;
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  background: rgba(76, 174, 99, 1);
+}
+
+.time-unselect {
+  width: 182rpx;
+  /* border: 1rpx solid rgb(250, 248, 248); */
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  background: #fff;
+ box-shadow:0rpx 0rpx 6rpx 0rpx rgba(220,220,220,1);
+}
+
+.time-select text {
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.time-unselect text {
+  font-size: 28rpx;
+  color: #0d0d0d;
+}
+
+.confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 620rpx;
+  height: 88rpx;
+  background: rgba(183, 193, 71, 1);
+  border-radius: 44px;
+  color: #fff;
+  font-size: 34rpx;
+  align-self: center;
+}
+
+.list-item {
+  width: 148rpx;
+  height: 98rpx;
+  background: rgba(255, 255, 255, 1);
+  border: 2rpx solid rgba(246, 132, 59, 1);
+  border-radius: 10rpx;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 33rpx;
+  margin-top: 27rpx;
+}
+
+.list-item text {
+  color: #f86b24;
+  font-size: 22rpx;
+}
+
+.tip {
+  font-size: 22rpx;
+  color: rgba(71, 71, 71, 1);
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 25rpx;
+  margin-bottom: 95rpx;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.date {
+  display: flex;
+  margin-left: 20rpx; 
+  margin-top: 0rpx;
+
+  height: 70rpx;
+}
+
+
+/* flex column*/
+
+.common-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* flex row*/
+
+.common-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* flex 填充布局*/
+
+.common-fill {
+  flex: 1;
+  display: flex;
+}
+
+/* 横线*/
+
+.common-line {
+  height: 1rpx;
+  background-color: #EFEFEF;
+}
+
+.pick-contain{
+  background: #fff;
+  padding: 10rpx 18rpx 15rpx 8rpx;
+  color: #535353;
+  font-size: 30rpx;
+  }
+  
+  .floor{
+  display: flex;
+  height: 66rpx;
+  line-height: 80rpx;
+  margin-bottom: 25rpx;
+  }
+  
+  .label{
+  margin-right: 20rpx;
+  color: #535353;
+  font-size: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-bottom: 20rpx; 
+  }
+  
+  .pick-result{
+  border: solid 1px #d1d1d1;
+  width: 310rpx;
+  padding: 0 20rpx;
+  border-radius: 5rpx;
+  box-sizing: border-box;
+  position: relative;
+  }
+  
+  .pick-result .iconfont{
+  position: absolute;
+  right: 20rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3f3f3f;
+  font-size: 24rpx;
+  }
+  
+  .picker{
+  height: 100%;
+  }

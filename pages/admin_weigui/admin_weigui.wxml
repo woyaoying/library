@@ -1,0 +1,14 @@
+<view class='search'>
+  <input type='text' 
+  		 placeholder='请输入您要查学生的id'
+         bindinput='input' 
+         bindconfirm='confirm'/>
+  <icon type='search' class='icons'></icon>
+  <view wx:for='{{info}}' wx:key='*this'>
+          <view class='btn'>
+            <text>时间:{{Time[item.x]}} {{date[item.datePosition]}}</text>
+            <text>楼层:{{floor[item.floorIndex]}}     </text>
+            <text>位置:{{area[item.y]}}</text>
+          </view>
+      </view>
+</view>

@@ -1,0 +1,57 @@
+/* pages/start/start.wxss */
+page{
+	background-color: #fafafa;
+}
+.container{
+	height: 100vh;
+	font-size: 30rpx;
+  color: #3d667a;
+}
+.topImg{  
+  width: 100%;
+  height: 274rpx;
+}
+
+.bottomImg{
+	width: 100%;
+    height: 176rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.list{
+	width: 620rpx;
+	margin-top: 100rpx;
+}
+
+.item{
+	height: 100rpx;
+	line-height: 100rpx;
+	display: flex;
+	border-bottom: .5rpx solid #3d667a;
+	position: relative;
+}
+.item input{
+	height: 100%;
+	width: 100%;
+}
+.btn{
+	width: 50%;
+	height: 66rpx;
+	line-height: 66rpx;
+	text-align: center;
+  margin-top: 58rpx;
+	border: solid 1rpx rgba(224, 199, 136, 0.46);
+	color: #e0c788;
+}
+.register{
+	height: 70rpx;
+	line-height: 70rpx;
+	text-align: right;
+	width: 100%;
+	padding-right: 58rpx;
+}
+.bunton{
+  flex-direction: row-reverse;
+}
